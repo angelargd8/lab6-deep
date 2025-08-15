@@ -1,0 +1,13 @@
+--- Parte 1 ---
+* Describa en una frase la diferencia entre los modelos discriminativos y los generativos
+Los modelos discriminativos aprenden de la probabilidad condicional orientado en la decisión y los generativos de la probabilidad conjunta que se enfocan en el proceso de generación de datos. 
+
+* Explique como el concepto de MinMax se aplica a los GAN
+La forma en la que se aplica es que en el entrenamiento, ya que este consiste en un juego de minimax, ya que el D se adapta para minimizar el error de discriminación entre las muestras erealies y las generadas. Entonces, G se adapta para maximizar la probabilidad de que D cometa un error. 
+
+* Describa lo que se está observando en la imagen GIF que se generó
+Lo que se muestra en el gif, es la evolución de las muestras generadas por el GAN en el entrenamiento. Lo que se puede observar es que mientras avanza el entrenamiento los datos acercan más a la distribución de los datos reales. 
+
+* ¿Cree que se ha creado un buen modelo? ¿Por qué?
+En las primeras épocas los puntos están muy dispersos y que luego va mejorando, como se ve en la época 20 donde hay un una curva, pero sigue teniendo ruido. Ya en la época 50, parece tener la forma similar a seno, aunque aún tiene dispersión y le faltan ciclos. Ya luego, en las últimas épocas la curva que tiene es continua y la distribución es muy cercana a la objetivo. Entonces, ya que llega a la forma esperada y tomando en cuenta que la amplitud de los valores de X2 estan cercanos a 1 y que el desplazamiento de X1 coincide con el ciclo parcial de seno. Se puede decir que si es un buen modelo, ya que llega a una distribución cercana al objetivo y aprendio la forma base de seno. 
+

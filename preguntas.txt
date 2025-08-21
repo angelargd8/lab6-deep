@@ -11,6 +11,7 @@ Lo que se muestra en el gif, es la evolución de las muestras generadas por el G
 * ¿Cree que se ha creado un buen modelo? ¿Por qué?
 En las primeras épocas los puntos están muy dispersos y que luego va mejorando, como se ve en la época 20 donde hay un una curva, pero sigue teniendo ruido. Ya en la época 50, parece tener la forma similar a seno, aunque aún tiene dispersión y le faltan ciclos. Ya luego, en las últimas épocas la curva que tiene es continua y la distribución es muy cercana a la objetivo. Entonces, ya que llega a la forma esperada y tomando en cuenta que la amplitud de los valores de X2 estan cercanos a 1 y que el desplazamiento de X1 coincide con el ciclo parcial de seno. Se puede decir que si es un buen modelo, ya que llega a una distribución cercana al objetivo y aprendio la forma base de seno. 
 
+-- Parte 2 --
 * ¿Qué diferencias hay entre los modelos usados en la primera parte y los usados en esta parte?
 la mayor diferencia es la generacion la primera parte genera puntos de salida en R^2, mientrs que parte 2 genera imagenes 28x28. En cuanto a la implementacion
 la parte 2 usa funciones como tanh para normalizar MINST.

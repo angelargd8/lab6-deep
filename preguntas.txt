@@ -11,3 +11,19 @@ Lo que se muestra en el gif, es la evolución de las muestras generadas por el G
 * ¿Cree que se ha creado un buen modelo? ¿Por qué?
 En las primeras épocas los puntos están muy dispersos y que luego va mejorando, como se ve en la época 20 donde hay un una curva, pero sigue teniendo ruido. Ya en la época 50, parece tener la forma similar a seno, aunque aún tiene dispersión y le faltan ciclos. Ya luego, en las últimas épocas la curva que tiene es continua y la distribución es muy cercana a la objetivo. Entonces, ya que llega a la forma esperada y tomando en cuenta que la amplitud de los valores de X2 estan cercanos a 1 y que el desplazamiento de X1 coincide con el ciclo parcial de seno. Se puede decir que si es un buen modelo, ya que llega a una distribución cercana al objetivo y aprendio la forma base de seno. 
 
+* ¿Qué diferencias hay entre los modelos usados en la primera parte y los usados en esta parte?
+la mayor diferencia es la generacion la primera parte genera puntos de salida en R^2, mientrs que parte 2 genera imagenes 28x28. En cuanto a la implementacion
+la parte 2 usa funciones como tanh para normalizar MINST.
+
+* ¿Qué tan bien se han creado las imagenes esperadas?
+Bastante bien a partir de la epoca 28 se puede notar como ya empezaron a tener siluetas mas acordes a los numeros. Aunque aun se ven algo borrosas y algo
+incompletos pero se ven bien.
+
+* ¿Cómo mejoraría los modelos?
+Tal vez cambiaria los optimizadores como Adam para tener mejores resultados o añadiria mas data para que fueran entrenado. Ademas, aumentaria el rango
+de las imagenes no solo de 0 a 1 si no intentaria que se pudiera de -1 a 1 para que encaje con la red esperada. 
+
+* Observe el GIF creado, y describa la evolución que va viendo al pasar de las epocas
+Se puede observar como en las primeras epocas casi no se ve nada, mas que el ruido. por la epoca 10 se empiezan a notar siluetas y trazos.
+En la epoca 28 los numeros se logran leer de manera legible. Ya al final se notan legibles los numeros con un poco de ruido. Algo que s epuede observar
+es como se generar constantemente un mismo numero que es el 1.
